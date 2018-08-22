@@ -1,0 +1,12 @@
+$('.delete-row').click(function (event) {
+   event.preventDefault();
+   var id = $(this).data('id');
+   $.ajax({
+      url: "url/to/delete",
+      method: "POST",
+      cache: false,
+      data: { id: id },
+      success: function (html) {
+         $(this).parent().parent().remove();
+      });
+   });

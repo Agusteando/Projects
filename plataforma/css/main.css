@@ -1,0 +1,54 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+
+}
+li a:hover {
+    background-color: #111;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  display: grid;
+  border-style: solid;
+  border-color: red;
+  border-width: 2px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 100vw;
+  height: 100vh;
+}
+.btn-plantel {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 60px;
+  font-size: 30px;
+  font-family: "rond", Helvetica, sans-serif;
+  box-shadow: 0px 3px 20px 2px #000000;
+}
+.btn-plantel:hover {
+	color: white;
+	background-color: #111;
+}
+@font-face {
+    font-family: 'rond';
+    src: url('rond.eot');
+    src: url('rond.eot?#iefix') format('embedded-opentype'),
+         url('rond.woff') format('woff'),
+         url('rond.ttf') format('truetype'),
+         url('rond.svg#RondanaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
